@@ -33,6 +33,7 @@ div#wrapper1-human-activity{
 div#online-activity{
 	font-size: 20px;
 	padding-bottom: 5px;
+	font-family: Arial;
 }
 div#activity-gpoint{
 	 /*Центрирование по горизонтали*/
@@ -49,9 +50,11 @@ div#activity-gpoint{
 }
 div#other-places{
 	font-size: 16px;
+	font-family: Arial;
 }
 div#wrapper2-human-activity{
 	float: left;
+	font-family: Arial;
 }
 p#human-activity{
 	 /*На одну линия, цифры*/
