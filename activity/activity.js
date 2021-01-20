@@ -63,7 +63,12 @@ let st845 = setInterval(()=>{
 		let showvb = setTimeout(()=>{
 			chbox.checked=true;
 		},0);
-		let hidevb = setTimeout(()=>{chbox.checked=false;},6000);
+		let hidevb = setTimeout(()=>{
+			console.log(chbox.checked);
+			if(chbox.checked==true){
+				chbox.checked=false;
+			}
+		},6000);
 		OPnum = OPnum - 1;
 		otherPlaces.innerHTML = `${OPnum}`;
 	}
@@ -78,14 +83,214 @@ function HumanActivity(){
 
 		if(curHour==22 || curHour==23){
 			pivotNum = randomNumber(180, 201);
+			if(OPcounter>0){
+				OPcounter = OPcounter - 1;
+				if(OPcounter == 0){
+					OPnum = OPnum - 1;
+					otherPlaces.innerHTML = `${OPnum}`;
+					console.log(chbox.checked);
+					if(chbox.checked==false){
+						let showvb = setTimeout(()=>{
+							chbox.checked=true;
+						},0);
+						let hidevb = setTimeout(()=>{
+							if(chbox.checked==true){
+								chbox.checked=false;
+							}
+						},6000);
+					}
+				}
+				console.log(OPcounter);
+			}	
+			if(OPcounter == 0 && firstStep == 4){
+				OPcounter = randomNumber(1, 5);
+				console.log(OPcounter);
+			}else if(OPcounter==0 && firstStep == 0){
+				let showvb = setTimeout(()=>{
+					chbox.checked=true;
+				},0);
+				let hidevb = setTimeout(()=>{
+					if(chbox.checked==true){
+						chbox.checked=false;
+					}
+				},6000);
+				OPcounter = 1;
+				firstStep += 1;
+				console.log("Started");
+				OPnum = OPnum - 1;
+				otherPlaces.innerHTML = `${OPnum}`;
+			}else if(firstStep < 4){
+				OPcounter = 1;
+				firstStep += 1; 
+			}
 		}else if(curHour==0 || curHour==1){
 			pivotNum = randomNumber(150, 181);
+			if(OPcounter>0){
+				OPcounter = OPcounter - 1;
+				if(OPcounter == 0){
+					OPnum = OPnum - 1;
+					otherPlaces.innerHTML = `${OPnum}`;
+					console.log(chbox.checked);
+					if(chbox.checked==false){
+						let showvb = setTimeout(()=>{
+							chbox.checked=true;
+						},0);
+						let hidevb = setTimeout(()=>{
+							if(chbox.checked==true){
+								chbox.checked=false;
+							}
+						},6000);
+					}
+				}
+				console.log(OPcounter);
+			}	
+			if(OPcounter == 0 && firstStep == 4){
+				OPcounter = randomNumber(1, 5);
+				console.log(OPcounter);
+			}else if(OPcounter==0 && firstStep == 0){
+				let showvb = setTimeout(()=>{
+					chbox.checked=true;
+				},0);
+				let hidevb = setTimeout(()=>{
+					if(chbox.checked==true){
+						chbox.checked=false;
+					}
+				},6000);
+				OPcounter = 1;
+				firstStep += 1;
+				console.log("Started");
+				OPnum = OPnum - 1;
+				otherPlaces.innerHTML = `${OPnum}`;
+			}else if(firstStep < 4){
+				OPcounter = 1;
+				firstStep += 1; 
+			}
 		}else if(curHour>1 && curHour<=3){
 			pivotNum = randomNumber(120, 151);
+			if(OPcounter>0){
+				OPcounter = OPcounter - 1;
+				if(OPcounter == 0){
+					OPnum = OPnum - 1;
+					otherPlaces.innerHTML = `${OPnum}`;
+					console.log(chbox.checked);
+					if(chbox.checked==false){
+						let showvb = setTimeout(()=>{
+							chbox.checked=true;
+						},0);
+						let hidevb = setTimeout(()=>{
+							if(chbox.checked==true){
+								chbox.checked=false;
+							}
+						},6000);
+					}
+				}
+				console.log(OPcounter);
+			}	
+			if(OPcounter == 0 && firstStep == 4){
+				OPcounter = randomNumber(1, 5);
+				console.log(OPcounter);
+			}else if(OPcounter==0 && firstStep == 0){
+				let showvb = setTimeout(()=>{
+					chbox.checked=true;
+				},0);
+				let hidevb = setTimeout(()=>{
+					if(chbox.checked==true){
+						chbox.checked=false;
+					}
+				},6000);
+				OPcounter = 1;
+				firstStep += 1;
+				console.log("Started");
+				OPnum = OPnum - 1;
+				otherPlaces.innerHTML = `${OPnum}`;
+			}else if(firstStep < 4){
+				OPcounter = 1;
+				firstStep += 1; 
+			}
 		}else if(curHour>3 && curHour<=9){
 			pivotNum = randomNumber(20, 51);
+			if(OPcounter>0){
+				OPcounter = OPcounter - 1;
+				if(OPcounter == 0){
+					OPnum = OPnum - 1;
+					otherPlaces.innerHTML = `${OPnum}`;
+					console.log(chbox.checked);
+					if(chbox.checked==false){
+						let showvb = setTimeout(()=>{
+							chbox.checked=true;
+						},0);
+						let hidevb = setTimeout(()=>{
+							if(chbox.checked==true){
+								chbox.checked=false;
+							}
+						},6000);
+					}
+				}
+				console.log(OPcounter);
+			}	
+			if(OPcounter == 0 && firstStep == 4){
+				OPcounter = randomNumber(1, 5);
+				console.log(OPcounter);
+			}else if(OPcounter==0 && firstStep == 0){
+				let showvb = setTimeout(()=>{
+					chbox.checked=true;
+				},0);
+				let hidevb = setTimeout(()=>{
+					if(chbox.checked==true){
+						chbox.checked=false;
+					}
+				},6000);
+				OPcounter = 1;
+				firstStep += 1;
+				console.log("Started");
+				OPnum = OPnum - 1;
+				otherPlaces.innerHTML = `${OPnum}`;
+			}else if(firstStep < 4){
+				OPcounter = 1;
+				firstStep += 1; 
+			}
 		}else if(curHour>9 && curHour<=13){
 			pivotNum = randomNumber(80, 101);
+			if(OPcounter>0){
+				OPcounter = OPcounter - 1;
+				if(OPcounter == 0){
+					OPnum = OPnum - 1;
+					otherPlaces.innerHTML = `${OPnum}`;
+					console.log(chbox.checked);
+					if(chbox.checked==false){
+						let showvb = setTimeout(()=>{
+							chbox.checked=true;
+						},0);
+						let hidevb = setTimeout(()=>{
+							if(chbox.checked==true){
+								chbox.checked=false;
+							}
+						},6000);
+					}
+				}
+				console.log(OPcounter);
+			}	
+			if(OPcounter == 0 && firstStep == 4){
+				OPcounter = randomNumber(1, 5);
+				console.log(OPcounter);
+			}else if(OPcounter==0 && firstStep == 0){
+				let showvb = setTimeout(()=>{
+					chbox.checked=true;
+				},0);
+				let hidevb = setTimeout(()=>{
+					if(chbox.checked==true){
+						chbox.checked=false;
+					}
+				},6000);
+				OPcounter = 1;
+				firstStep += 1;
+				console.log("Started");
+				OPnum = OPnum - 1;
+				otherPlaces.innerHTML = `${OPnum}`;
+			}else if(firstStep < 4){
+				OPcounter = 1;
+				firstStep += 1; 
+			}
 		}else if(curHour>13 && curHour<=18){
 			pivotNum = randomNumber(80, 101);
 			if(OPcounter>0){
@@ -98,7 +303,11 @@ function HumanActivity(){
 						let showvb = setTimeout(()=>{
 							chbox.checked=true;
 						},0);
-						let hidevb = setTimeout(()=>{chbox.checked=false;},6000);
+						let hidevb = setTimeout(()=>{
+							if(chbox.checked==true){
+								chbox.checked=false;
+							}
+						},6000);
 					}
 				}
 				console.log(OPcounter);
@@ -110,7 +319,11 @@ function HumanActivity(){
 				let showvb = setTimeout(()=>{
 					chbox.checked=true;
 				},0);
-				let hidevb = setTimeout(()=>{chbox.checked=false;},6000);
+				let hidevb = setTimeout(()=>{
+					if(chbox.checked==true){
+						chbox.checked=false;
+					}
+				},6000);
 				OPcounter = 1;
 				firstStep += 1;
 				console.log("Started");
@@ -122,8 +335,88 @@ function HumanActivity(){
 			}
 		}else if(curHour>18 && curHour<=20){
 			pivotNum = randomNumber(100, 131);
+			if(OPcounter>0){
+				OPcounter = OPcounter - 1;
+				if(OPcounter == 0){
+					OPnum = OPnum - 1;
+					otherPlaces.innerHTML = `${OPnum}`;
+					console.log(chbox.checked);
+					if(chbox.checked==false){
+						let showvb = setTimeout(()=>{
+							chbox.checked=true;
+						},0);
+						let hidevb = setTimeout(()=>{
+							if(chbox.checked==true){
+								chbox.checked=false;
+							}
+						},6000);
+					}
+				}
+				console.log(OPcounter);
+			}	
+			if(OPcounter == 0 && firstStep == 4){
+				OPcounter = randomNumber(1, 5);
+				console.log(OPcounter);
+			}else if(OPcounter==0 && firstStep == 0){
+				let showvb = setTimeout(()=>{
+					chbox.checked=true;
+				},0);
+				let hidevb = setTimeout(()=>{
+					if(chbox.checked==true){
+						chbox.checked=false;
+					}
+				},6000);
+				OPcounter = 1;
+				firstStep += 1;
+				console.log("Started");
+				OPnum = OPnum - 1;
+				otherPlaces.innerHTML = `${OPnum}`;
+			}else if(firstStep < 4){
+				OPcounter = 1;
+				firstStep += 1; 
+			}
 		}else if(curHour>20 && curHour<22){
 			pivotNum = randomNumber(140, 171);
+			if(OPcounter>0){
+				OPcounter = OPcounter - 1;
+				if(OPcounter == 0){
+					OPnum = OPnum - 1;
+					otherPlaces.innerHTML = `${OPnum}`;
+					console.log(chbox.checked);
+					if(chbox.checked==false){
+						let showvb = setTimeout(()=>{
+							chbox.checked=true;
+						},0);
+						let hidevb = setTimeout(()=>{
+							if(chbox.checked==true){
+								chbox.checked=false;
+							}
+						},6000);
+					}
+				}
+				console.log(OPcounter);
+			}	
+			if(OPcounter == 0 && firstStep == 4){
+				OPcounter = randomNumber(1, 5);
+				console.log(OPcounter);
+			}else if(OPcounter==0 && firstStep == 0){
+				let showvb = setTimeout(()=>{
+					chbox.checked=true;
+				},0);
+				let hidevb = setTimeout(()=>{
+					if(chbox.checked==true){
+						chbox.checked=false;
+					}
+				},6000);
+				OPcounter = 1;
+				firstStep += 1;
+				console.log("Started");
+				OPnum = OPnum - 1;
+				otherPlaces.innerHTML = `${OPnum}`;
+			}else if(firstStep < 4){
+				OPcounter = 1;
+				firstStep += 1; 
+			}
 		}
 		const constCurAV = curAV;
 		if(pivotNum > curAV){
