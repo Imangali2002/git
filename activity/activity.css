@@ -28,6 +28,7 @@ div#inner-human-activity{
 }
 div#wrapper1-human-activity{
 	float: left;
+	margin-right: 5px;
 }
 div#online-activity{
 	font-size: 20px;
@@ -124,7 +125,7 @@ p#other-places-number{
 	display: none;
 }
 #modalpopup:checked ~.popup-block{
-	bottom: 5px;
+	bottom: 0px !important;
 }
 .close-popup{
 	position: absolute;
