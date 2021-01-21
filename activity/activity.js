@@ -103,7 +103,7 @@ function HumanActivity(){
 				console.log(OPcounter);
 			}	
 			if(OPcounter == 0 && firstStep == 4){
-				OPcounter = randomNumber(1, 5);
+				OPcounter = randomNumber(1, 4);
 				console.log(OPcounter);
 			}else if(OPcounter==0 && firstStep == 0){
 				let showvb = setTimeout(()=>{
@@ -145,7 +145,7 @@ function HumanActivity(){
 				console.log(OPcounter);
 			}	
 			if(OPcounter == 0 && firstStep == 4){
-				OPcounter = randomNumber(1, 5);
+				OPcounter = randomNumber(1, 4);
 				console.log(OPcounter);
 			}else if(OPcounter==0 && firstStep == 0){
 				let showvb = setTimeout(()=>{
@@ -187,7 +187,7 @@ function HumanActivity(){
 				console.log(OPcounter);
 			}	
 			if(OPcounter == 0 && firstStep == 4){
-				OPcounter = randomNumber(1, 5);
+				OPcounter = randomNumber(1, 4);
 				console.log(OPcounter);
 			}else if(OPcounter==0 && firstStep == 0){
 				let showvb = setTimeout(()=>{
@@ -229,7 +229,7 @@ function HumanActivity(){
 				console.log(OPcounter);
 			}	
 			if(OPcounter == 0 && firstStep == 4){
-				OPcounter = randomNumber(1, 5);
+				OPcounter = randomNumber(1, 4);
 				console.log(OPcounter);
 			}else if(OPcounter==0 && firstStep == 0){
 				let showvb = setTimeout(()=>{
@@ -271,7 +271,7 @@ function HumanActivity(){
 				console.log(OPcounter);
 			}	
 			if(OPcounter == 0 && firstStep == 4){
-				OPcounter = randomNumber(1, 5);
+				OPcounter = randomNumber(1, 4);
 				console.log(OPcounter);
 			}else if(OPcounter==0 && firstStep == 0){
 				let showvb = setTimeout(()=>{
@@ -313,7 +313,7 @@ function HumanActivity(){
 				console.log(OPcounter);
 			}	
 			if(OPcounter == 0 && firstStep == 4){
-				OPcounter = randomNumber(1, 5);
+				OPcounter = randomNumber(1, 4);
 				console.log(OPcounter);
 			}else if(OPcounter==0 && firstStep == 0){
 				let showvb = setTimeout(()=>{
@@ -355,7 +355,7 @@ function HumanActivity(){
 				console.log(OPcounter);
 			}	
 			if(OPcounter == 0 && firstStep == 4){
-				OPcounter = randomNumber(1, 5);
+				OPcounter = randomNumber(1, 4);
 				console.log(OPcounter);
 			}else if(OPcounter==0 && firstStep == 0){
 				let showvb = setTimeout(()=>{
@@ -397,7 +397,7 @@ function HumanActivity(){
 				console.log(OPcounter);
 			}	
 			if(OPcounter == 0 && firstStep == 4){
-				OPcounter = randomNumber(1, 5);
+				OPcounter = randomNumber(1, 4);
 				console.log(OPcounter);
 			}else if(OPcounter==0 && firstStep == 0){
 				let showvb = setTimeout(()=>{
