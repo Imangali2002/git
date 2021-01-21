@@ -135,3 +135,24 @@ p#other-places-number{
 	font-size: 24px;
 	cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+	.popup-block{
+		/*position*/
+		position: fixed;
+		display: block;
+		float: left;
+		left: 5px;
+		bottom: -999px;
+		transition: 1s all; 
+		/*styles*/
+		width: 200px;
+		height: 70px;
+		background-color: #F9F9F9;
+		color: black;
+		border-radius: 10px;
+		text-align: center;
+	}
+	#modalpopup:checked ~.popup-block{
+		bottom: 58px !important;
+	}
+}
